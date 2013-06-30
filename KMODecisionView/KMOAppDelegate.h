@@ -6,8 +6,6 @@
 //  Copyright (c) 2013 Kyle O'Brien. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-
 @interface KMOAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;

@@ -23,6 +23,8 @@
 		27F92A83177FF070005C0EC4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27F92A5E177FF06F005C0EC4 /* Foundation.framework */; };
 		27F92A8B177FF070005C0EC4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 27F92A89177FF070005C0EC4 /* InfoPlist.strings */; };
 		27F92A8E177FF070005C0EC4 /* KMODecisionViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F92A8D177FF070005C0EC4 /* KMODecisionViewTests.m */; };
+		27F92A99177FF4EF005C0EC4 /* KMODecisionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F92A98177FF4EF005C0EC4 /* KMODecisionView.m */; };
+		27F92A9A177FF4EF005C0EC4 /* KMODecisionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F92A98177FF4EF005C0EC4 /* KMODecisionView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,8 @@
 		27F92A8A177FF070005C0EC4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		27F92A8C177FF070005C0EC4 /* KMODecisionViewTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KMODecisionViewTests.h; sourceTree = "<group>"; };
 		27F92A8D177FF070005C0EC4 /* KMODecisionViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KMODecisionViewTests.m; sourceTree = "<group>"; };
+		27F92A97177FF4EF005C0EC4 /* KMODecisionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMODecisionView.h; sourceTree = "<group>"; };
+		27F92A98177FF4EF005C0EC4 /* KMODecisionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMODecisionView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,11 +121,13 @@
 		27F92A62177FF06F005C0EC4 /* KMODecisionView */ = {
 			isa = PBXGroup;
 			children = (
+				27F92A74177FF06F005C0EC4 /* MainStoryboard.storyboard */,
 				27F92A6B177FF06F005C0EC4 /* KMOAppDelegate.h */,
 				27F92A6C177FF06F005C0EC4 /* KMOAppDelegate.m */,
-				27F92A74177FF06F005C0EC4 /* MainStoryboard.storyboard */,
 				27F92A77177FF06F005C0EC4 /* KMOViewController.h */,
 				27F92A78177FF06F005C0EC4 /* KMOViewController.m */,
+				27F92A97177FF4EF005C0EC4 /* KMODecisionView.h */,
+				27F92A98177FF4EF005C0EC4 /* KMODecisionView.m */,
 				27F92A63177FF06F005C0EC4 /* Supporting Files */,
 			);
 			path = KMODecisionView;
@@ -274,6 +280,7 @@
 				27F92A69177FF06F005C0EC4 /* main.m in Sources */,
 				27F92A6D177FF06F005C0EC4 /* KMOAppDelegate.m in Sources */,
 				27F92A79177FF06F005C0EC4 /* KMOViewController.m in Sources */,
+				27F92A99177FF4EF005C0EC4 /* KMODecisionView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				27F92A8E177FF070005C0EC4 /* KMODecisionViewTests.m in Sources */,
+				27F92A9A177FF4EF005C0EC4 /* KMODecisionView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

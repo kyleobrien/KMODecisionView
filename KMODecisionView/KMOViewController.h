@@ -6,8 +6,13 @@
 //  Copyright (c) 2013 Kyle O'Brien. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "KMODecisionView.h"
 
-@interface KMOViewController : UIViewController
+@interface KMOViewController : UIViewController <KMODecisionViewDelegate>
+
+- (IBAction)userTappedFirstExample:(id)sender;
+- (IBAction)userTappedSecondExample:(id)sender;
+- (IBAction)userTappedThirdExample:(id)sender;
+- (IBAction)userTappedFourthExample:(id)sender;
 
 @end
