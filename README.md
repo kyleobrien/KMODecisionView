@@ -1,7 +1,7 @@
 KMODecisionView
 ===============
 
-A UIAlertView / UIActionSheet replacement that is heavily influenced by Loren Brichter's Letterpress.
+A UIAlertView / UIActionSheet replacement that is heavily influenced by the alert views in Loren Brichter's Letterpress.
 
 This class attempts to follow the spirit of UIAlertView whenever possible.
 
