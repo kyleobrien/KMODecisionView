@@ -6,8 +6,8 @@
 //  Copyright (c) 2013 Kyle O'Brien. All rights reserved.
 //
 
-#import <SenTestingKit/SenTestingKit.h>
+#import <XCTest/XCTest.h>
 
-@interface KMODecisionViewTests : SenTestCase
+@interface KMODecisionViewTests : XCTestCase
 
 @end

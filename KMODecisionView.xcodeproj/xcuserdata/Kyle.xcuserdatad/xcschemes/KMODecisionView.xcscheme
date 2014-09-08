@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "27F92A7E177FF070005C0EC4"
-               BuildableName = "KMODecisionViewTests.octest"
+               BuildableName = "KMODecisionViewTests.xctest"
                BlueprintName = "KMODecisionViewTests"
                ReferencedContainer = "container:KMODecisionView.xcodeproj">
             </BuildableReference>

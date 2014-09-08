@@ -6,11 +6,10 @@
 //  Copyright (c) 2013 Kyle O'Brien. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import <UIKit/UIKit.h>
+@import Foundation;
+@import UIKit;
 
 @class KMODecisionView;
-
 
 @protocol KMODecisionViewDelegate <NSObject>
 
@@ -27,25 +26,34 @@
 
 @end
 
-
 @interface KMODecisionView : UIView
 
-@property (weak) id<KMODecisionViewDelegate> delegate;
+FOUNDATION_EXPORT CGFloat const kKMODecisionViewMessageFontSize;
+FOUNDATION_EXPORT CGFloat const kKMODecisionViewButtonFontSize;
+
+@property (nonatomic, weak) id<KMODecisionViewDelegate> delegate;
 
 @property (nonatomic, copy) NSString *message;
 
-@property (nonatomic, readonly) NSInteger numberOfButtons;
-@property (assign, readonly, getter = isVisible) BOOL visible;
+@property (nonatomic, copy) NSString *fontName;
+@property (nonatomic, strong) UIColor *color;
 
-- (id)initWithMessage:(NSString *)message
-           delegate:(id)delegate
-    cancelButtonTitle:(NSString *)cancelButtonTitle
-    otherButtonTitles:(NSArray *)otherButtonTitles;
+@property (nonatomic, assign) NSInteger destructiveButtonIndex;
+@property (nonatomic, strong) UIColor *destructiveColor;
+
+@property (nonatomic, readonly) NSInteger numberOfButtons;
+@property (nonatomic, assign, readonly, getter = isVisible) BOOL visible;
+
+- (instancetype)initWithMessage:(NSString *)message
+                       delegate:(id)delegate
+              cancelButtonTitle:(NSString *)cancelButtonTitle
+    	otherButtonTitles:(NSArray *)otherButtonTitles;
 
 - (NSInteger)addButtonWithTitle:(NSString *)title;
 - (NSString *)buttonTitleAtIndex:(NSInteger)buttonIndex;
 
-- (void)show;
+- (void)showInViewController:(UIViewController *)viewController;
+- (void)showInViewController:(UIViewController *)viewController andDimBackgroundWithPercent:(CGFloat)dimPercent;
 - (void)dismissWithTappedButtonIndex:(NSInteger)buttonIndex animated:(BOOL)animated;
 
 @end

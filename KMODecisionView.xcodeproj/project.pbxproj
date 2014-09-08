@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		272C7F0819BE663900573D30 /* KMODecisionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 272C7F0719BE663900573D30 /* KMODecisionView.m */; };
+		272C7F0919BE663900573D30 /* KMODecisionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 272C7F0719BE663900573D30 /* KMODecisionView.m */; };
 		27F92A5D177FF06F005C0EC4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27F92A5C177FF06F005C0EC4 /* UIKit.framework */; };
 		27F92A5F177FF06F005C0EC4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27F92A5E177FF06F005C0EC4 /* Foundation.framework */; };
 		27F92A61177FF06F005C0EC4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27F92A60177FF06F005C0EC4 /* CoreGraphics.framework */; };
@@ -18,13 +20,10 @@
 		27F92A73177FF06F005C0EC4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27F92A72177FF06F005C0EC4 /* Default-568h@2x.png */; };
 		27F92A76177FF06F005C0EC4 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27F92A74177FF06F005C0EC4 /* MainStoryboard.storyboard */; };
 		27F92A79177FF06F005C0EC4 /* KMOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F92A78177FF06F005C0EC4 /* KMOViewController.m */; };
-		27F92A81177FF070005C0EC4 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27F92A80177FF070005C0EC4 /* SenTestingKit.framework */; };
 		27F92A82177FF070005C0EC4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27F92A5C177FF06F005C0EC4 /* UIKit.framework */; };
 		27F92A83177FF070005C0EC4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27F92A5E177FF06F005C0EC4 /* Foundation.framework */; };
 		27F92A8B177FF070005C0EC4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 27F92A89177FF070005C0EC4 /* InfoPlist.strings */; };
 		27F92A8E177FF070005C0EC4 /* KMODecisionViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F92A8D177FF070005C0EC4 /* KMODecisionViewTests.m */; };
-		27F92A99177FF4EF005C0EC4 /* KMODecisionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F92A98177FF4EF005C0EC4 /* KMODecisionView.m */; };
-		27F92A9A177FF4EF005C0EC4 /* KMODecisionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F92A98177FF4EF005C0EC4 /* KMODecisionView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		272C7F0619BE663900573D30 /* KMODecisionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMODecisionView.h; sourceTree = "<group>"; };
+		272C7F0719BE663900573D30 /* KMODecisionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMODecisionView.m; sourceTree = "<group>"; };
 		27F92A59177FF06F005C0EC4 /* KMODecisionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KMODecisionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27F92A5C177FF06F005C0EC4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		27F92A5E177FF06F005C0EC4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -54,14 +55,11 @@
 		27F92A75177FF06F005C0EC4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		27F92A77177FF06F005C0EC4 /* KMOViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KMOViewController.h; sourceTree = "<group>"; };
 		27F92A78177FF06F005C0EC4 /* KMOViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KMOViewController.m; sourceTree = "<group>"; };
-		27F92A7F177FF070005C0EC4 /* KMODecisionViewTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KMODecisionViewTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		27F92A80177FF070005C0EC4 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		27F92A7F177FF070005C0EC4 /* KMODecisionViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KMODecisionViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		27F92A88177FF070005C0EC4 /* KMODecisionViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KMODecisionViewTests-Info.plist"; sourceTree = "<group>"; };
 		27F92A8A177FF070005C0EC4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		27F92A8C177FF070005C0EC4 /* KMODecisionViewTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KMODecisionViewTests.h; sourceTree = "<group>"; };
 		27F92A8D177FF070005C0EC4 /* KMODecisionViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KMODecisionViewTests.m; sourceTree = "<group>"; };
-		27F92A97177FF4EF005C0EC4 /* KMODecisionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMODecisionView.h; sourceTree = "<group>"; };
-		27F92A98177FF4EF005C0EC4 /* KMODecisionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMODecisionView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +77,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27F92A81177FF070005C0EC4 /* SenTestingKit.framework in Frameworks */,
 				27F92A82177FF070005C0EC4 /* UIKit.framework in Frameworks */,
 				27F92A83177FF070005C0EC4 /* Foundation.framework in Frameworks */,
 			);
@@ -102,7 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				27F92A59177FF06F005C0EC4 /* KMODecisionView.app */,
-				27F92A7F177FF070005C0EC4 /* KMODecisionViewTests.octest */,
+				27F92A7F177FF070005C0EC4 /* KMODecisionViewTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -113,7 +110,6 @@
 				27F92A5C177FF06F005C0EC4 /* UIKit.framework */,
 				27F92A5E177FF06F005C0EC4 /* Foundation.framework */,
 				27F92A60177FF06F005C0EC4 /* CoreGraphics.framework */,
-				27F92A80177FF070005C0EC4 /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -126,8 +122,8 @@
 				27F92A6C177FF06F005C0EC4 /* KMOAppDelegate.m */,
 				27F92A77177FF06F005C0EC4 /* KMOViewController.h */,
 				27F92A78177FF06F005C0EC4 /* KMOViewController.m */,
-				27F92A97177FF4EF005C0EC4 /* KMODecisionView.h */,
-				27F92A98177FF4EF005C0EC4 /* KMODecisionView.m */,
+				272C7F0619BE663900573D30 /* KMODecisionView.h */,
+				272C7F0719BE663900573D30 /* KMODecisionView.m */,
 				27F92A63177FF06F005C0EC4 /* Supporting Files */,
 			);
 			path = KMODecisionView;
@@ -202,8 +198,8 @@
 			);
 			name = KMODecisionViewTests;
 			productName = KMODecisionViewTests;
-			productReference = 27F92A7F177FF070005C0EC4 /* KMODecisionViewTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productReference = 27F92A7F177FF070005C0EC4 /* KMODecisionViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -212,6 +208,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = KMO;
+				LastTestingUpgradeCheck = 0600;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Kyle O'Brien";
 			};
@@ -277,10 +274,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				272C7F0819BE663900573D30 /* KMODecisionView.m in Sources */,
 				27F92A69177FF06F005C0EC4 /* main.m in Sources */,
 				27F92A6D177FF06F005C0EC4 /* KMOAppDelegate.m in Sources */,
 				27F92A79177FF06F005C0EC4 /* KMOViewController.m in Sources */,
-				27F92A99177FF4EF005C0EC4 /* KMODecisionView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,8 +285,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				272C7F0919BE663900573D30 /* KMODecisionView.m in Sources */,
 				27F92A8E177FF070005C0EC4 /* KMODecisionViewTests.m in Sources */,
-				27F92A9A177FF4EF005C0EC4 /* KMODecisionView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,6 +387,7 @@
 		27F92A92177FF070005C0EC4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KMODecisionView/KMODecisionView-Prefix.pch";
 				INFOPLIST_FILE = "KMODecisionView/KMODecisionView-Info.plist";
@@ -401,6 +399,7 @@
 		27F92A93177FF070005C0EC4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KMODecisionView/KMODecisionView-Prefix.pch";
 				INFOPLIST_FILE = "KMODecisionView/KMODecisionView-Info.plist";
@@ -416,13 +415,13 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(inherited)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KMODecisionView/KMODecisionView-Prefix.pch";
 				INFOPLIST_FILE = "KMODecisionViewTests/KMODecisionViewTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
 		};
@@ -433,13 +432,13 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(inherited)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KMODecisionView/KMODecisionView-Prefix.pch";
 				INFOPLIST_FILE = "KMODecisionViewTests/KMODecisionViewTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};
@@ -462,6 +461,7 @@
 				27F92A93177FF070005C0EC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		27F92A94177FF070005C0EC4 /* Build configuration list for PBXNativeTarget "KMODecisionViewTests" */ = {
 			isa = XCConfigurationList;
@@ -470,6 +470,7 @@
 				27F92A96177FF070005C0EC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

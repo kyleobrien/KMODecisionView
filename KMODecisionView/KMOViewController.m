@@ -8,65 +8,67 @@
 
 #import "KMOViewController.h"
 
-@interface KMOViewController ()
-
-@end
-
 @implementation KMOViewController
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-}
 
 #pragma mark - User action
 
 - (IBAction)userTappedFirstExample:(id)sender
 {
-    KMODecisionView *decisionView = [[KMODecisionView alloc] initWithMessage:@"Hi! This is a decision view. It has a message, but no title."
+    NSString *message = NSLocalizedString(@"Hi! This is a decision view. It has a message, but no title.", nil);
+    
+    KMODecisionView *decisionView = [[KMODecisionView alloc] initWithMessage:message
                                                                     delegate:self
-                                                           cancelButtonTitle:@"Okay"
+                                                           cancelButtonTitle:NSLocalizedString(@"Okay", nil)
                                                            otherButtonTitles:nil];
-    [decisionView show];
+    
+    [decisionView showInViewController:self];
 }
 
 - (IBAction)userTappedSecondExample:(id)sender
 {
-    KMODecisionView *decisionView = [[KMODecisionView alloc] initWithMessage:@"Here's an example with two buttons, displayed side-by-side."
+    NSString *message = NSLocalizedString(@"Here's an example with two buttons, displayed side-by-side. The background is dimmed to 75%.", nil);
+    
+    KMODecisionView *decisionView = [[KMODecisionView alloc] initWithMessage:message
                                                                     delegate:self
-                                                           cancelButtonTitle:@"Cancel"
-                                                           otherButtonTitles:@[@"Ok"]];
-    [decisionView show];
+                                                           cancelButtonTitle:NSLocalizedString(@"Cancel", nil)
+                                                           otherButtonTitles:@[NSLocalizedString(@"OK", nil)]];
+    
+    [decisionView showInViewController:self andDimBackgroundWithPercent:0.75];
 }
 
 - (IBAction)userTappedThirdExample:(id)sender
 {
-    KMODecisionView *decisionView = [[KMODecisionView alloc] initWithMessage:@"Here's another example with two buttons, but with a bit more text."
+    NSString *message = NSLocalizedString(@"Here's another example with two buttons, but with a bit more text. Button text and color is altered to make it appear destructive.", nil);
+    
+    KMODecisionView *decisionView = [[KMODecisionView alloc] initWithMessage:message
                                                                     delegate:self
-                                                           cancelButtonTitle:@"Cancel, take two"
-                                                           otherButtonTitles:@[@"A bit more text"]];
-    [decisionView show];
+                                                           cancelButtonTitle:@"Cancel"
+                                                           otherButtonTitles:@[@"Yes, Delete"]];
+    decisionView.destructiveColor = [UIColor redColor];
+    decisionView.destructiveButtonIndex = 1;
+    
+    [decisionView showInViewController:self];
 }
 
 - (IBAction)userTappedFourthExample:(id)sender
 {
-    KMODecisionView *decisionView = [[KMODecisionView alloc] initWithMessage:@"This last example has three buttons."
+    NSString *message = @"This last example has three buttons and a custom font (Futura Medium).";
+    NSArray *otherButtonTitles = @[NSLocalizedString(@"Option #1", nil), @"Option #2"];
+    
+    KMODecisionView *decisionView = [[KMODecisionView alloc] initWithMessage:message
                                                                     delegate:self
-                                                           cancelButtonTitle:@"Cancel"
-                                                           otherButtonTitles:@[@"Option #1", @"Option #2"]];
-    [decisionView show];
+                                                           cancelButtonTitle:NSLocalizedString(@"Cancel", nil)
+                                                           otherButtonTitles:otherButtonTitles];
+    decisionView.fontName = @"Futura-Medium";
+    
+    [decisionView showInViewController:self];
 }
 
 #pragma mark - KMODecisionViewDelegate
 
 - (void)decisionView:(KMODecisionView *)decisionView tappedButtonAtIndex:(NSInteger)buttonIndex
 {
-    NSLog(@"User tapped button %d", buttonIndex);
+    NSLog(@"User tapped button %ld", buttonIndex);
 }
 
 - (void)willPresentDecisionView:(KMODecisionView *)decisionView
